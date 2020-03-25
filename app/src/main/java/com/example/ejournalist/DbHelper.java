@@ -41,7 +41,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_EVENTS);
         onCreate(db);
     }
-    public boolean insertEventsData(String name, String note){
+    public boolean insertEventsData(String name){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_NAME, name);
@@ -107,7 +107,7 @@ public class DbHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         //ensures we delete the notes associated with an event
         db.delete(TABLE_NOTES,COL_EVENTS_ID+" = ?",   new String [] {id});
-        return db.delete(TABLE_EVENTS,"NOTES_ID = ?", new String [] {id});
+        return db.delete(TABLE_EVENTS,"EVENTS_ID = ?", new String [] {id});
     }
 
 }
