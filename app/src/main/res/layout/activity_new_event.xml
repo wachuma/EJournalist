@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/newEventTvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/newEventTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enterEvent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/newEventEtLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newEventTvLayout">
+        <EditText
+            android:id="@+id/newEventEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/newEventButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newEventEtLayout">
+        <Button
+            android:id="@+id/newEventBtn"
+            android:text="@string/postNewEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

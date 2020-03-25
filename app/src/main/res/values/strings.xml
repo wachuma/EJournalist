@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EJournalist</string>
+    <string name="newEventBtn">New Event</string>
+    <string name="myEventsBtn">My Events</string>
+    <string name="exitBtn">Exit</string>
+    <string name="enterEvent">Enter Event Name</string>
+    <string name="postNewEvent">Add Event</string>
 </resources>
